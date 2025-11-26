@@ -138,24 +138,46 @@ nav a:hover::after { width: 100%; }
 }
 .btn-nav::after { display: none; } /* Quitar subrayado del botón */
 
+/* Estilos para la nueva barra superior */
+.top-info-bar {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    font-size: 0.85rem;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos */
+    align-items: center;
+    font-weight: 500;
+}
+
+.top-info-bar p {
+    margin: 0; /* Quita el margen por defecto de los párrafos */
+}
+
+/* Ajuste responsivo para celulares */
+@media (max-width: 768px) {
+    .top-info-bar {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 /* Hero Section (Bienvenida) */
 .hero {
-    /* La URL de la imagen puede cambiarse aquí */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?veterinarian,dog'); 
-    background-size: cover;
-    background-p.hero {
-    /* Degradado moderno sobre la imagen */
+    /* Degradado moderno Teal sobre la imagen */
     background-image: linear-gradient(rgba(15, 118, 110, 0.8), rgba(19, 78, 74, 0.8)), url('https://source.unsplash.com/1600x900/?veterinarian,dog');
     background-size: cover;
     background-position: center;
-    height: 70vh; /* Un poco más alto */
+    height: 75vh; /* Altura ajustada para que quepa bien con la barra superior */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Corte diagonal moderno abajo */
-}
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Corte diagonal */
+    position: relative;
 }
 
 .hero div {
