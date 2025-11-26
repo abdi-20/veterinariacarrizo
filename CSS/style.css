@@ -33,8 +33,21 @@ header {
 }
 
 .logo {
+    display: flex;          /* Alinea imagen y texto horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    gap: 15px;             /* Espacio entre el logo y el texto */
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;           /* Asegura que el texto sea blanco sobre el fondo verde */
+}
+
+/* Nueva clase para controlar el tamaño de la imagen */
+.logo-img {
+    height: 50px;           /* Ajusta este valor según el grosor de tu barra */
+    width: auto;            /* Mantiene la proporción para no deformar el logo */
+    border-radius: 5px;     /* Opcional: suaviza las esquinas si el logo tiene fondo blanco */
+    background-color: white; /* Opcional: si tu logo es negro y no se ve en el fondo verde */
+    padding: 2px;           /* Opcional: espacio interno si usas fondo blanco */
 }
 
 nav ul {
@@ -43,6 +56,10 @@ nav ul {
     gap: 20px;
     padding: 0;
     margin: 0;
+}
+
+input:required, select:required {
+    border-left: 4px solid var(--accent-color); /* Marca roja a la izquierda */
 }
 
 nav a {
@@ -156,4 +173,17 @@ footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Pone el logo arriba y el menú abajo */
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Lista vertical de enlaces */
+        gap: 10px;
+        margin-top: 1rem;
+    }
 }
