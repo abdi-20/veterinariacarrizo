@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Inicio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Veterinaria el Carrizo</div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#citas">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div>
+            <h1>Cuidamos a quienes más amas</h1>
+            <p>Especialistas en salud y bienestar para tu mascota en El Carrizo.</p>
+            <a href="#citas" class="btn">Agendar Cita Ahora</a>
+        </div>
+    </section>
+
+    <section id="productos" class="container section">
+        <h2 class="section-title">Nuestros Productos Destacados</h2>
+        <div class="products-grid">
+            <div class="card">
+                <div class="card-img">Foto de Alimento</div>
+                <div class="card-body">
+                    <h3>Alimento Premium Perro</h3>
+                    <p>Nutrición balanceada para todas las razas.</p>
+                    <p class="price">$550.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Foto de Accesorio</div>
+                <div class="card-body">
+                    <h3>Correa Retráctil</h3>
+                    <p>Paseos cómodos y seguros de hasta 5 metros.</p>
+                    <p class="price">$250.00</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Foto de Medicina</div>
+                <div class="card-body">
+                    <h3>Desparasitante Externo</h3>
+                    <p>Protección efectiva contra pulgas y garrapatas.</p>
+                    <p class="price">$320.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="citas" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Agenda una Cita</h2>
+            <div class="appointment-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre del Dueño:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mascota">Nombre de la Mascota:</label>
+                        <input type="text" id="mascota" name="mascota" required placeholder="Ej. Firulais">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Tipo de Servicio:</label>
+                        <select id="servicio" name="servicio">
+                            <option value="consulta">Consulta General</option>
+                            <option value="vacunacion">Vacunación</option>
+                            <option value="estetica">Estética / Baño</option>
+                            <option value="urgencia">Urgencia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha Preferida:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Comentarios Adicionales:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe los síntomas o necesidades..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Confirmar Cita</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
