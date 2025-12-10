@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     /* Paleta Moderna: Verde Menta Profundo y Acentos Dorados */
     --primary: #0f766e;      /* Verde cerceta profesional */
@@ -43,13 +47,16 @@ header {
     animation: fadeInDown 0.8s ease-out; /* Animación de entrada */
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -104,8 +111,21 @@ nav a {
     color: var(--text-main);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95rem;
     position: relative;
     transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.auth-item {
+    color: var(--primary); /* Que destaque con el color principal */
+    font-weight: bold;
+}
+
+#auth-link {
+    display: inline-block;
+    min-width: 130px;
+    text-align: center;
 }
 
 /* Efecto de subrayado animado */
@@ -151,16 +171,20 @@ nav a:hover::after { width: 100%; }
 }
 
 .top-info-bar p {
-    margin: 0; /* Quita el margen por defecto de los párrafos */
+    margin: 0;
 }
 
 /* Ajuste responsivo para celulares */
 @media (max-width: 768px) {
-    .top-info-bar {
-        flex-direction: column;
-        gap: 5px;
-        text-align: center;
-        padding: 10px;
+    header .container {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+    nav ul { 
+        gap: 15px; 
+        font-size: 0.9rem; 
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 }
 
@@ -219,8 +243,6 @@ nav a:hover::after { width: 100%; }
     font-size: 2.2rem;
     position: relative;
     display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /* Adorno debajo del título */
@@ -305,6 +327,54 @@ nav a:hover::after { width: 100%; }
     outline: none;
     border-color: var(--primary);
     background-color: var(--white);
+}
+
+/* Contenedor del botón Servicios */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 8px;
+    padding: 10px 0;
+    top: 100%;
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+.dropdown-content li {
+    width: 100%;
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: var(--text-main);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--bg-light);
+    color: var(--primary);
+}
+
+.dropdown-content a::after {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex !important;
 }
 
 /* Footer */
