@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Carrito de Compras</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 40vh;">
+        <div>
+            <h1>Carrito de Compras</h1>
+            <p>Revisa tus productos seleccionados</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="cart-container">
+            <div id="cart-items"></div>
+            
+            <div id="cart-summary" class="cart-summary scroll-animate fade-in-up" style="display: none;">
+                <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Resumen de Compra</h2>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; color: #666;">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button onclick="clearCart()" class="btn" style="background-color: #dc2626; flex: 1;">Vaciar Carrito</button>
+                    <button onclick="checkout()" class="btn" style="flex: 2;">Proceder al Pago</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+    <script>
+        // Función para actualizar el resumen del carrito
+        function updateCartSummary() {
+            const subtotal = cart.getTotal();
+            const subtotalEl = document.getElementById('cart-subtotal');
+            const totalEl = document.getElementById('cart-total');
+            
+            if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+            if (totalEl) totalEl.textContent = `$${subtotal.toFixed(2)}`;
+        }
+        
+        // Sobrescribir renderCart para incluir actualización del resumen
+        const originalRenderCart = renderCart;
+        renderCart = function() {
+            originalRenderCart();
+            updateCartSummary();
+        };
+        
+        // Función de checkout
+        function checkout() {
+            if (cart.items.length === 0) {
+                alert('Tu carrito está vacío');
+                return;
+            }
+            alert('¡Gracias por tu compra! Esta funcionalidad está en desarrollo. Total: $' + cart.getTotal().toFixed(2));
+        }
+        
+        // Renderizar carrito al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCart();
+        });
+    </script>
+</body>
+</html>
+
+

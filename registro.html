@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Registro</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 40vh;">
+        <div>
+            <h1>Crear Cuenta</h1>
+            <p>Únete a nuestra comunidad</p>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="appointment-form" style="max-width: 600px;">
+                <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem;">Registro de Usuario</h2>
+                <form action="#" method="POST" id="registroForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="+52 954-00-00-00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required placeholder="Mínimo 8 caracteres" minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmar Contraseña:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Repite tu contraseña" minlength="8">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; cursor: pointer;">
+                            <input type="checkbox" name="terms" required style="width: auto;">
+                            <span>Acepto los <a href="#" style="color: var(--primary);">términos y condiciones</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Crear Cuenta</button>
+                </form>
+
+                <p style="text-align: center; margin-top: 2rem; color: #666;">
+                    ¿Ya tienes una cuenta? 
+                    <a href="login.html" style="color: var(--primary); text-decoration: none; font-weight: bold;">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+            
+            alert('¡Registro exitoso! Bienvenido a Veterinaria El Carrizo. (Funcionalidad en desarrollo)');
+            // Aquí iría la lógica de registro real
+        });
+    </script>
+</body>
+</html>
+

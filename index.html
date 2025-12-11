@@ -20,7 +20,7 @@
         <div class="top-info-bar">
 					
 				<p>
-					Veterinaria El Carrizo, Santiago Pinotepa Nacional, Oaxaca
+					Veterinaria "El Carrizo", El Carrizo, Oaxaca
 				</p>
 
 				<p id="clock-container">
@@ -41,24 +41,24 @@
         
         <nav>
     <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
         
         <li class="dropdown">
             <a href="#servicios" class="dropbtn">Servicios ▾</a>
             <ul class="dropdown-content">
-                <li><a href="#consulta">Consulta</a></li>
-                <li><a href="#vacunacion">Vacunación</a></li>
-                <li><a href="#desparasitacion">Desparasitación</a></li>
-                <li><a href="#urgencia">Urgencia</a></li>
+                <li><a href="consulta.html">Consulta</a></li>
+                <li><a href="vacunacion.html">Vacunación</a></li>
+                <li><a href="desparasitacion.html">Desparasitación</a></li>
+                <li><a href="urgencia.html">Urgencia</a></li>
             </ul>
         </li>
             <li class="dropdown">
                 <a href="#productos" class="dropbtn">Productos ▾</a>
                 <ul class="dropdown-content">
-                    <li><a href="#alimentos">Alimentos</a></li>
-                    <li><a href="#accesorios">Accesorios</a></li>
-                    <li><a href="#medicamentos">Medicamentos</a></li>
+                    <li><a href="alimentos.html">Alimentos</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="medicamentos.html">Medicamentos</a></li>
                 </ul>
             </li>
         <li class="dropdown">
@@ -70,17 +70,24 @@
             <a href="#articulos" class="submenu-btn">Artículos ▸</a>
             
             <ul class="dropdown-sub-content">
-                <li><a href="#perros">Cuidado de Perros</a></li>
-                <li><a href="#gatos">Cuidados de Gatos</a></li>
-                <li><a href="#alimentacion">Alimentación de Mascotas</a></li>
+                <li><a href="perros.html">Cuidado de Perros</a></li>
+                <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
             </ul>
             </li>
         
             </ul>
         </li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#login" id="auth-link" class="auth-item">Iniciar Sesión</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+        <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+        <li>
+            <a href="carrito.html" class="cart-icon">
+                🛒 Carrito
+                <span id="cart-badge" class="cart-badge hidden">0</span>
+            </a>
+        </li>
         <li><a href="#citas" class="btn-nav">Agendar Cita</a></li>
     </ul>
 </nav>
@@ -104,6 +111,7 @@
                     <h3>Alimento Premium Perro</h3>
                     <p>Nutrición balanceada para todas las razas.</p>
                     <p class="price">$550.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Premium Perro', '$550.00', 'alimento-perro')">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="card">
@@ -112,6 +120,7 @@
                     <h3>Correa Retráctil</h3>
                     <p>Paseos cómodos y seguros de hasta 5 metros.</p>
                     <p class="price">$250.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Correa Retráctil', '$250.00', 'correa-retractil')">Agregar al Carrito</button>
                 </div>
             </div>
             <div class="card">
@@ -120,6 +129,7 @@
                     <h3>Desparasitante Externo</h3>
                     <p>Protección efectiva contra pulgas y garrapatas.</p>
                     <p class="price">$320.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Desparasitante Externo', '$320.00', 'desparasitante-externo')">Agregar al Carrito</button>
                 </div>
             </div>
         </div>
@@ -172,6 +182,7 @@
             <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
         </div>
     </footer>
+    <script src="JavaScript/cart.js"></script>
     <script src="JavaScript/script.js"></script>
     <script src="JavaScript/clock.js"></script>
 </body>

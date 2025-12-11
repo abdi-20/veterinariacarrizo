@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Alimentos</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Alimentos para Mascotas</h1>
+            <p>Nutrición de calidad para tu mejor amigo</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2 class="section-title">Nuestros Alimentos</h2>
+        <div class="products-grid">
+            <div class="card">
+                <div class="card-img">Alimento Premium Perro</div>
+                <div class="card-body">
+                    <h3>Alimento Premium Perro Adulto</h3>
+                    <p>Nutrición balanceada para perros adultos de todas las razas. Rico en proteínas y vitaminas.</p>
+                    <p class="price">$550.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Premium Perro Adulto', '$550.00', 'alimento-perro-adulto')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Alimento Cachorro</div>
+                <div class="card-body">
+                    <h3>Alimento Premium Cachorro</h3>
+                    <p>Fórmula especial para el crecimiento saludable de cachorros. Con DHA para desarrollo cerebral.</p>
+                    <p class="price">$580.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Premium Cachorro', '$580.00', 'alimento-cachorro')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Alimento Gato</div>
+                <div class="card-body">
+                    <h3>Alimento Premium Gato Adulto</h3>
+                    <p>Nutrición completa para gatos adultos. Con taurina y ácidos grasos esenciales.</p>
+                    <p class="price">$520.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Premium Gato Adulto', '$520.00', 'alimento-gato-adulto')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Alimento Senior</div>
+                <div class="card-body">
+                    <h3>Alimento Premium Senior</h3>
+                    <p>Fórmula especial para mascotas mayores. Con antioxidantes y glucosamina.</p>
+                    <p class="price">$600.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Premium Senior', '$600.00', 'alimento-senior')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Alimento Light</div>
+                <div class="card-body">
+                    <h3>Alimento Light / Control de Peso</h3>
+                    <p>Ayuda a mantener un peso saludable. Bajo en calorías, rico en fibra.</p>
+                    <p class="price">$570.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Light / Control de Peso', '$570.00', 'alimento-light')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Alimento Hipoalergénico</div>
+                <div class="card-body">
+                    <h3>Alimento Hipoalergénico</h3>
+                    <p>Para mascotas con alergias alimentarias. Sin granos, con proteínas de alta calidad.</p>
+                    <p class="price">$650.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Alimento Hipoalergénico', '$650.00', 'alimento-hipoalergenico')">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

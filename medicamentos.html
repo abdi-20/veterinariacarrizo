@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Medicamentos</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Medicamentos</h1>
+            <p>Farmacia veterinaria completa</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div style="max-width: 900px; margin: 0 auto; margin-bottom: 2rem;">
+            <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; color: #dc2626; font-weight: bold;">
+                ⚠️ IMPORTANTE: Todos los medicamentos requieren receta veterinaria. Consulta con nuestro equipo antes de administrar cualquier medicamento a tu mascota.
+            </p>
+        </div>
+
+        <h2 class="section-title">Nuestros Medicamentos</h2>
+        <div class="products-grid">
+            <div class="card">
+                <div class="card-img">Desparasitante</div>
+                <div class="card-body">
+                    <h3>Desparasitante Interno</h3>
+                    <p>Elimina parásitos intestinales. Disponible en diferentes presentaciones según peso.</p>
+                    <p class="price">$275.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Desparasitante Interno', '$275.00', 'desparasitante-interno')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Desparasitante Externo</div>
+                <div class="card-body">
+                    <h3>Desparasitante Externo</h3>
+                    <p>Protección efectiva contra pulgas y garrapatas. Aplicación mensual.</p>
+                    <p class="price">$320.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Desparasitante Externo', '$320.00', 'desparasitante-externo')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Antibióticos</div>
+                <div class="card-body">
+                    <h3>Antibióticos</h3>
+                    <p>Tratamiento de infecciones bacterianas. Solo con receta veterinaria.</p>
+                    <p class="price">Consultar precio</p>
+                    <button class="btn-add-cart" onclick="alert('Por favor, consulta con nuestro equipo para obtener este medicamento con receta.')" style="opacity: 0.7;">Consultar Disponibilidad</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Antiinflamatorios</div>
+                <div class="card-body">
+                    <h3>Antiinflamatorios</h3>
+                    <p>Alivio del dolor y reducción de inflamación. Prescripción veterinaria requerida.</p>
+                    <p class="price">Consultar precio</p>
+                    <button class="btn-add-cart" onclick="alert('Por favor, consulta con nuestro equipo para obtener este medicamento con receta.')" style="opacity: 0.7;">Consultar Disponibilidad</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Vitaminas</div>
+                <div class="card-body">
+                    <h3>Suplementos y Vitaminas</h3>
+                    <p>Complejo vitamínico para fortalecer el sistema inmunológico.</p>
+                    <p class="price">$280.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Suplementos y Vitaminas', '$280.00', 'suplementos-vitaminas')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Shampoo Medicado</div>
+                <div class="card-body">
+                    <h3>Shampoo Medicado</h3>
+                    <p>Para problemas de piel, hongos o parásitos externos.</p>
+                    <p class="price">$180.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Shampoo Medicado', '$180.00', 'shampoo-medicado')">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">¿Necesitas un medicamento específico?</h3>
+            <p style="margin-bottom: 1rem;">Contáctanos y te ayudaremos a encontrarlo</p>
+            <a href="contacto.html" class="btn">Contactar</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

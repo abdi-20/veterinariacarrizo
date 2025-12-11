@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Cuidados de Gatos</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Cuidados de Gatos</h1>
+            <p>Guía completa para el bienestar de tu gato</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Alimentación Felina</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Los gatos son carnívoros obligados, lo que significa que necesitan una dieta rica en 
+                    proteínas animales. Elige alimentos específicos para gatos que contengan taurina, 
+                    un aminoácido esencial para su salud.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Alimentación libre o programada según las necesidades</li>
+                    <li>Alimentos húmedos y secos para variedad</li>
+                    <li>Agua fresca siempre disponible (los gatos prefieren agua corriente)</li>
+                    <li>Evita dar leche de vaca (puede causar diarrea)</li>
+                </ul>
+            </article>
+
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Arena Sanitaria</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    La higiene de la arena sanitaria es fundamental para la salud y el bienestar de tu gato. 
+                    Los gatos son muy limpios y pueden rechazar usar una caja sucia.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Limpia la arena diariamente</li>
+                    <li>Cambia completamente la arena semanalmente</li>
+                    <li>Proporciona una caja por gato más una extra</li>
+                    <li>Coloca las cajas en lugares tranquilos y accesibles</li>
+                </ul>
+            </article>
+
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Enriquecimiento Ambiental</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Los gatos necesitan estimulación mental y física para mantenerse saludables y felices, 
+                    especialmente si viven en interiores.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Rascadores verticales y horizontales</li>
+                    <li>Juguetes interactivos y de caza</li>
+                    <li>Áreas elevadas para observar y descansar</li>
+                    <li>Tiempo de juego diario con tu gato</li>
+                    <li>Ventanas con vista al exterior</li>
+                </ul>
+            </article>
+
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Cuidado de la Salud</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Los gatos son expertos en ocultar enfermedades. Las visitas regulares al veterinario 
+                    son esenciales para detectar problemas a tiempo.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Vacunación anual (triple felina y rabia)</li>
+                    <li>Desparasitación regular</li>
+                    <li>Esterilización o castración</li>
+                    <li>Revisiones veterinarias anuales</li>
+                    <li>Control de peso y prevención de obesidad</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 class="section-title" style="text-align: left; display: block;">Aseo y Cuidado del Pelaje</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Aunque los gatos se acicalan solos, necesitan ayuda adicional, especialmente los de 
+                    pelo largo.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Cepillado regular según el tipo de pelaje</li>
+                    <li>Baños ocasionales si es necesario</li>
+                    <li>Revisión de uñas y corte si es necesario</li>
+                    <li>Limpieza de oídos y ojos</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

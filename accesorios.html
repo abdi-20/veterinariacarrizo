@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Accesorios</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Accesorios para Mascotas</h1>
+            <p>Todo lo que necesitas para el cuidado de tu mascota</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2 class="section-title">Nuestros Accesorios</h2>
+        <div class="products-grid">
+            <div class="card">
+                <div class="card-img">Correa Retráctil</div>
+                <div class="card-body">
+                    <h3>Correa Retráctil</h3>
+                    <p>Paseos cómodos y seguros de hasta 5 metros. Mecanismo de bloqueo incluido.</p>
+                    <p class="price">$250.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Correa Retráctil', '$250.00', 'correa-retractil')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Plato Comedero</div>
+                <div class="card-body">
+                    <h3>Plato Comedero Acero Inoxidable</h3>
+                    <p>Plato resistente y fácil de limpiar. Disponible en varios tamaños.</p>
+                    <p class="price">$180.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Plato Comedero Acero Inoxidable', '$180.00', 'plato-comedero')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Cama Mascota</div>
+                <div class="card-body">
+                    <h3>Cama Ortopédica para Mascotas</h3>
+                    <p>Comodidad y soporte para articulaciones. Fácil de lavar.</p>
+                    <p class="price">$450.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Cama Ortopédica para Mascotas', '$450.00', 'cama-ortopedica')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Juguetes</div>
+                <div class="card-body">
+                    <h3>Juguetes Interactivos</h3>
+                    <p>Variedad de juguetes para estimulación mental y ejercicio físico.</p>
+                    <p class="price">$235.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Juguetes Interactivos', '$235.00', 'juguetes-interactivos')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Transportadora</div>
+                <div class="card-body">
+                    <h3>Transportadora para Mascotas</h3>
+                    <p>Segura y cómoda para viajes. Varios tamaños disponibles.</p>
+                    <p class="price">$515.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Transportadora para Mascotas', '$515.00', 'transportadora')">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">Cepillo</div>
+                <div class="card-body">
+                    <h3>Kit de Aseo</h3>
+                    <p>Cepillo, peine y cortaúñas. Mantén a tu mascota siempre limpia.</p>
+                    <p class="price">$220.00</p>
+                    <button class="btn-add-cart" onclick="addToCart('Kit de Aseo', '$220.00', 'kit-aseo')">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

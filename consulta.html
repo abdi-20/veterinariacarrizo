@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Consulta</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Consulta General</h1>
+            <p>Atención veterinaria integral para tu mascota</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 class="section-title">Servicio de Consulta</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+                Nuestro servicio de consulta general incluye un examen físico completo de tu mascota, 
+                evaluación de su estado de salud, diagnóstico de posibles problemas y recomendaciones 
+                personalizadas para su cuidado. Nuestros veterinarios están capacitados para atender 
+                tanto perros como gatos de todas las edades.
+            </p>
+
+            <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">¿Qué incluye la consulta?</h3>
+            <ul style="font-size: 1.1rem; line-height: 2; margin-bottom: 2rem;">
+                <li>Examen físico completo</li>
+                <li>Evaluación de signos vitales</li>
+                <li>Revisión de peso y condición corporal</li>
+                <li>Evaluación dental y bucal</li>
+                <li>Recomendaciones de cuidado y prevención</li>
+                <li>Asesoría nutricional</li>
+            </ul>
+
+            <div style="background: var(--bg-light); padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">Precio</h3>
+                <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">$350.00 MXN</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html#citas" class="btn">Agendar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Galería</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Galería</h1>
+            <p>Momentos especiales en nuestra veterinaria</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2 class="section-title">Nuestras Instalaciones y Momentos</h2>
+        <div class="products-grid">
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%); color: white; font-size: 1.2rem;">
+                    Consultorio Principal
+                </div>
+                <div class="card-body">
+                    <h3>Área de Consulta</h3>
+                    <p>Espacio moderno y equipado para atender a tu mascota.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; font-size: 1.2rem;">
+                    Sala de Espera
+                </div>
+                <div class="card-body">
+                    <h3>Recepción</h3>
+                    <p>Ambiente cómodo mientras esperas tu turno.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%); color: white; font-size: 1.2rem;">
+                    Área de Cirugía
+                </div>
+                <div class="card-body">
+                    <h3>Quirófano</h3>
+                    <p>Instalaciones esterilizadas para procedimientos quirúrgicos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; font-size: 1.2rem;">
+                    Mascotas Felices
+                </div>
+                <div class="card-body">
+                    <h3>Nuestros Pacientes</h3>
+                    <p>Momentos especiales con las mascotas que atendemos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%); color: white; font-size: 1.2rem;">
+                    Equipo Médico
+                </div>
+                <div class="card-body">
+                    <h3>Profesionales</h3>
+                    <p>Nuestro equipo de veterinarios altamente capacitados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; font-size: 1.2rem;">
+                    Farmacia
+                </div>
+                <div class="card-body">
+                    <h3>Medicamentos</h3>
+                    <p>Farmacia completa con los mejores productos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+

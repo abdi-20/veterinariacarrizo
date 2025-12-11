@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria el Carrizo | Alimentación de Mascotas</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Story+Script&display=swap');
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-info-bar">
+            <p>Veterinaria "El Carrizo", El Carrizo, Oaxaca</p>
+            <p id="clock-container">
+                <span id="clock-display"></span> 
+            </p>
+            <p>Contáctanos: +52 954-00-00-00</p>
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Veterinaria" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">El Carrizo</span>
+                    <span class="brand-sub">Veterinaria</span>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="consulta.html">Consulta</a></li>
+                            <li><a href="vacunacion.html">Vacunación</a></li>
+                            <li><a href="desparasitacion.html">Desparasitación</a></li>
+                            <li><a href="urgencia.html">Urgencia</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#productos" class="dropbtn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="alimentos.html">Alimentos</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                            <li><a href="medicamentos.html">Medicamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#blog" class="dropbtn">Blog / Consejos ▾</a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu">
+                                <a href="#articulos" class="submenu-btn">Artículos ▸</a>
+                                <ul class="dropdown-sub-content">
+                                    <li><a href="perros.html">Cuidado de Perros</a></li>
+                                    <li><a href="gatos.html">Cuidados de Gatos</a></li>
+                                    <li><a href="alimentacion.html">Alimentación de Mascotas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html" class="auth-item">Iniciar Sesión</a></li>
+                    <li><a href="registro.html" class="auth-item">Registrarse</a></li>
+                    <li>
+                        <a href="carrito.html" class="cart-icon">
+                            🛒 Carrito
+                            <span id="cart-badge" class="cart-badge hidden">0</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#citas" class="btn-nav">Agendar Cita</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div>
+            <h1>Alimentación de Mascotas</h1>
+            <p>Guía completa sobre nutrición para perros y gatos</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Nutrientes Esenciales</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Una dieta balanceada debe incluir todos los nutrientes esenciales que tu mascota necesita 
+                    para mantenerse saludable. Estos incluyen proteínas, carbohidratos, grasas, vitaminas, 
+                    minerales y agua.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>Proteínas:</strong> Esenciales para el crecimiento y reparación de tejidos</li>
+                    <li><strong>Carbohidratos:</strong> Fuente de energía</li>
+                    <li><strong>Grasas:</strong> Ácidos grasos esenciales para la salud de la piel y el pelaje</li>
+                    <li><strong>Vitaminas y Minerales:</strong> Necesarios para funciones corporales</li>
+                    <li><strong>Agua:</strong> Fundamental para la hidratación</li>
+                </ul>
+            </article>
+
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Alimentación por Edades</h2>
+                <h3 style="color: var(--primary); margin-top: 1.5rem; margin-bottom: 1rem;">Cachorros y Gatitos</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; text-align: justify;">
+                    Los cachorros y gatitos necesitan alimentos especiales con mayor contenido de proteínas 
+                    y calorías para su rápido crecimiento.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2; margin-bottom: 1.5rem;">
+                    <li>Alimentación 3-4 veces al día</li>
+                    <li>Alimentos específicos para cachorros/gatitos</li>
+                    <li>Alto contenido de DHA para desarrollo cerebral</li>
+                </ul>
+
+                <h3 style="color: var(--primary); margin-top: 1.5rem; margin-bottom: 1rem;">Adultos</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; text-align: justify;">
+                    Las mascotas adultas necesitan una dieta balanceada que mantenga su peso ideal y 
+                    proporcione energía para sus actividades diarias.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2; margin-bottom: 1.5rem;">
+                    <li>Alimentación 2 veces al día</li>
+                    <li>Control de porciones para evitar obesidad</li>
+                    <li>Alimentos completos y balanceados</li>
+                </ul>
+
+                <h3 style="color: var(--primary); margin-top: 1.5rem; margin-bottom: 1rem;">Senior</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; text-align: justify;">
+                    Las mascotas mayores tienen necesidades nutricionales diferentes, con menos calorías 
+                    pero más nutrientes específicos.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Alimentos bajos en calorías</li>
+                    <li>Mayor contenido de antioxidantes</li>
+                    <li>Suplementos para articulaciones (glucosamina)</li>
+                </ul>
+            </article>
+
+            <article style="margin-bottom: 3rem;">
+                <h2 class="section-title" style="text-align: left; display: block;">Alimentos a Evitar</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
+                    Algunos alimentos humanos pueden ser tóxicos o peligrosos para las mascotas. Es 
+                    importante conocerlos para evitar accidentes.
+                </p>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li><strong>Chocolate:</strong> Tóxico para perros y gatos</li>
+                    <li><strong>Cebolla y Ajo:</strong> Pueden causar anemia</li>
+                    <li><strong>Uvas y Pasas:</strong> Tóxicas para perros</li>
+                    <li><strong>Xilitol:</strong> Edulcorante muy peligroso</li>
+                    <li><strong>Alcohol:</strong> Extremadamente tóxico</li>
+                    <li><strong>Cafeína:</strong> Puede ser fatal</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 class="section-title" style="text-align: left; display: block;">Consejos Generales</h2>
+                <ul style="font-size: 1.1rem; line-height: 2;">
+                    <li>Lee las etiquetas de los alimentos para verificar ingredientes</li>
+                    <li>Consulta con tu veterinario sobre la mejor dieta para tu mascota</li>
+                    <li>Proporciona agua fresca siempre disponible</li>
+                    <li>Establece horarios regulares de alimentación</li>
+                    <li>Evita cambios bruscos en la dieta</li>
+                    <li>Controla el peso de tu mascota regularmente</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Veterinaria el Carrizo. Todos los derechos reservados.</p>
+            <p>Tel: 555-1234-567 | Dirección: Av. Principal #123, El Carrizo.</p>
+        </div>
+    </footer>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/clock.js"></script>
+</body>
+</html>
+
